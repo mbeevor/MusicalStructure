@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/menu_item_one"
+        style="@style/menuItem"
+        android:text="@string/menu_item_one" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/menu_item_two"
+        style="@style/menuItem"
+        android:layout_toRightOf="@id/menu_item_one"
+        android:text="@string/menu_item_two" />
+
+    <TextView
+        android:id="@+id/menu_item_three"
+        style="@style/menuItem"
+        android:layout_below="@id/menu_item_one"
+        android:text="@string/menu_item_three" />
+
+
+    <TextView
+        android:id="@+id/menu_item_four"
+        style="@style/menuItemStore"
+        android:layout_below="@id/menu_item_two"
+        android:layout_toRightOf="@id/menu_item_three"
+        android:text="@string/menu_item_four" />
+
+</RelativeLayout>

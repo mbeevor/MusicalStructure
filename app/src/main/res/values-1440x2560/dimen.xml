@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_margin">20dp</dimen>
+    <dimen name="menu_height">250dp</dimen>
+    <dimen name="menu_width">170dp</dimen>
+</resources>
