@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_background"
+    android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
     <LinearLayout
         android:id="@+id/app_tray_home"
-        style="@style/appTray" >
+        style="@style/appTray">
 
         <TextView
             style="@style/logoText"
@@ -42,8 +43,7 @@
     <LinearLayout
         android:id="@+id/menu_item_two"
         style="@style/menuItem"
-        android:layout_below="@id/app_tray_home"
-        android:layout_toRightOf="@id/menu_item_one">
+        android:layout_below="@id/menu_item_one">
 
         <ImageView
             style="@style/menuItemImage"
@@ -58,7 +58,7 @@
     <LinearLayout
         android:id="@+id/menu_item_three"
         style="@style/menuItem"
-        android:layout_below="@id/menu_item_one">
+        android:layout_below="@id/menu_item_two">
 
         <ImageView
             style="@style/menuItemImage"
@@ -73,8 +73,7 @@
     <LinearLayout
         android:id="@+id/menu_item_four"
         style="@style/menuItem"
-        android:layout_below="@id/menu_item_two"
-        android:layout_toRightOf="@id/menu_item_three">
+        android:layout_below="@id/menu_item_three">
 
         <ImageView
             style="@style/menuItemImage"
@@ -87,7 +86,4 @@
     </LinearLayout>
 
 
-
-
-
-</RelativeLayout>
+</LinearLayout>

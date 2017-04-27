@@ -12,45 +12,36 @@
     <!-- MainActvity Menu items -->
     <style name="menuItem">
         <!-- Customize your theme here. -->
-        <item name="android:layout_width">@dimen/menu_width</item>
-        <item name="android:layout_height">@dimen/menu_height</item>
-        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
         <item name="android:background">@drawable/activity_text_view</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
+        <item name="android:elevation">4dp</item>
     </style>
 
     <!-- MainActvity Menu item text -->
     <style name="menuItemText">
         <!-- Customize your theme here. -->
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
     <!-- MainActvity Menu item image -->
     <style name="menuItemImage">
         <!-- Customize your theme here. -->
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">@dimen/menu_image_width</item>
         <item name="android:layout_height">@dimen/menu_image_height</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
     </style>
 
-    <!-- MainActvity Store Menu item -->
-    <style name="menuItemStore">
-        <!-- Customize your theme here. -->
-        <item name="android:layout_width">@dimen/menu_width</item>
-        <item name="android:layout_height">@dimen/menu_height</item>
-        <item name="android:background">@drawable/store_text_view</item>
-        <item name="android:layout_margin">@dimen/menu_margin</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
-    <!-- Style for app tray at bottom -->
+    <!-- Style for app tray at bottom and for logo on MainActivity -->
     <style name="appTray">
         <!-- Customize your theme here. -->
         <item name="android:layout_width">match_parent</item>
@@ -67,7 +58,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">serif</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
@@ -79,7 +70,26 @@
         <item name="android:layout_height">@dimen/menu_image_height</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
         <item name="android:strokeColor">@color/activity_background</item>
-        <item name="android:strokeWidth">1dp</item>
+    </style>
+
+    <!-- Now playing image layout -->
+    <style name="nowPlaying">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/activity_text_view</item>
+        <item name="android:layout_margin">@dimen/menu_margin</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Now playing image -->
+    <style name="nowPlayingImage">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/menu_margin</item>
     </style>
 
 </resources>
