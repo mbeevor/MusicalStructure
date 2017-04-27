@@ -3,4 +3,5 @@
     <dimen name="menu_margin">10dp</dimen>
     <dimen name="menu_height">200dp</dimen>
     <dimen name="menu_width">160dp</dimen>
+    <dimen name="menu_image_height">70dp</dimen>
 </resources>

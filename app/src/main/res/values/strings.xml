@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Beevor-Music</string>
-
+    <string name="name_first">Beevor</string>
+    <string name="name_last">White</string>
     <string name="menu_item_one">Now Playing</string>
     <string name="menu_item_two">Recently Played</string>
     <string name="menu_item_three">My Music</string>
