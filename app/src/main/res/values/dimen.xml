@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <dimen name="menu_margin">5dp</dimen>
+    <dimen name="menu_padding">30dp</dimen>
     <dimen name="menu_image_width">35dp</dimen>
     <dimen name="menu_image_height">35dp</dimen>
+
+    <dimen name="icon_margin">30dp</dimen>
+
+
 </resources>

@@ -8,14 +8,23 @@
     tools:context="com.example.android.musicalstructure.MainActivity">
 
 
-    <TextView
-        style="@style/logoText"
-        android:text="add play next, back buttons here" />
+    <LinearLayout style="@style/appTrayTop">
 
+        <ImageView
+            style="@style/iconImage"
+            android:src="@drawable/back" />
 
-    <LinearLayout
-        android:id="@+id/now_playing"
-        style="@style/nowPlaying">
+        <ImageView
+            style="@style/iconImage"
+            android:src="@drawable/play" />
+
+        <ImageView
+            style="@style/iconImage"
+            android:src="@drawable/forward" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/nowPlaying">
 
         <ImageView
             style="@style/nowPlayingImage"
@@ -24,15 +33,27 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/app_tray_home"
-        style="@style/appTray">
+    <LinearLayout style="@style/appTrayBottom">
 
+        <ImageView
+            android:id="@+id/nowPlaying1"
+            style="@style/iconImage"
+            android:src="@drawable/nowplaying" />
 
+        <ImageView
+            android:id="@+id/recent1"
+            style="@style/iconImage"
+            android:src="@drawable/recent" />
 
-        <TextView
-            style="@style/logoText"
-            android:text="create menu drawer of all icons from homescreen" />
+        <ImageView
+            android:id="@+id/library1"
+            style="@style/iconImage"
+            android:src="@drawable/library" />
+
+        <ImageView
+            android:id="@+id/trolley1"
+            style="@style/iconImage"
+            android:src="@drawable/trolley" />
 
     </LinearLayout>
 

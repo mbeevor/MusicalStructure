@@ -8,8 +8,8 @@
     tools:context="com.example.android.musicalstructure.MainActivity">
 
     <LinearLayout
-        android:id="@+id/app_tray_home"
-        style="@style/appTray">
+        android:id="@+id/appLogo"
+        style="@style/appTrayTop">
 
         <TextView
             style="@style/logoText"
@@ -27,8 +27,7 @@
 
     <LinearLayout
         android:id="@+id/menu_item_one"
-        style="@style/menuItem"
-        android:layout_below="@id/app_tray_home">
+        style="@style/menuItem">
 
         <ImageView
             style="@style/menuItemImage"
@@ -42,8 +41,7 @@
 
     <LinearLayout
         android:id="@+id/menu_item_two"
-        style="@style/menuItem"
-        android:layout_below="@id/menu_item_one">
+        style="@style/menuItem">
 
         <ImageView
             style="@style/menuItemImage"
@@ -57,8 +55,7 @@
 
     <LinearLayout
         android:id="@+id/menu_item_three"
-        style="@style/menuItem"
-        android:layout_below="@id/menu_item_two">
+        style="@style/menuItem">
 
         <ImageView
             style="@style/menuItemImage"
@@ -72,8 +69,7 @@
 
     <LinearLayout
         android:id="@+id/menu_item_four"
-        style="@style/menuItem"
-        android:layout_below="@id/menu_item_three">
+        style="@style/menuItem">
 
         <ImageView
             style="@style/menuItemImage"

@@ -18,6 +18,8 @@
         <item name="android:background">@drawable/activity_text_view</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
         <item name="android:elevation">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+
     </style>
 
     <!-- MainActvity Menu item text -->
@@ -25,8 +27,8 @@
         <!-- Customize your theme here. -->
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
+        <item name="android:paddingLeft">@dimen/menu_padding</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">20sp</item>
@@ -41,15 +43,26 @@
         <item name="android:layout_margin">@dimen/menu_margin</item>
     </style>
 
-    <!-- Style for app tray at bottom and for logo on MainActivity -->
-    <style name="appTray">
+    <!-- Style for app tray at top and for logo on MainActivity -->
+    <style name="appTrayTop">
         <!-- Customize your theme here. -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:background">@drawable/app_tray</item>
-        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@drawable/app_tray_top</item>
+        <item name="android:layout_margin">@dimen/menu_margin</item>
+    </style>
+
+    <!-- Style for app tray at bottom -->
+    <style name="appTrayBottom">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/app_tray_bottom</item>
+        <item name="android:layout_margin">@dimen/menu_margin</item>
     </style>
 
     <!-- Text for logo -->
@@ -66,9 +79,18 @@
     <!-- Image for logo -->
     <style name="logoImage">
         <!-- Customize your theme here. -->
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">@dimen/menu_image_width</item>
         <item name="android:layout_height">@dimen/menu_image_height</item>
         <item name="android:layout_margin">@dimen/menu_margin</item>
+        <item name="android:strokeColor">@color/activity_background</item>
+    </style>
+
+    <!-- Image for player icons  -->
+    <style name="iconImage">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">@dimen/menu_image_width</item>
+        <item name="android:layout_height">@dimen/menu_image_height</item>
+        <item name="android:layout_margin">@dimen/icon_margin</item>
         <item name="android:strokeColor">@color/activity_background</item>
     </style>
 
