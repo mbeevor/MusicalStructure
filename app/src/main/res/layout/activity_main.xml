@@ -25,8 +25,12 @@
 
     </LinearLayout>
 
+    <TextView
+        style="@style/description"
+        android:text="@string/activity_main_description" />
+
     <LinearLayout
-        android:id="@+id/menu_item_one"
+        android:id="@+id/now_playing"
         style="@style/menuItem">
 
         <ImageView
@@ -40,7 +44,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/menu_item_two"
+        android:id="@+id/recently_played"
         style="@style/menuItem">
 
         <ImageView
@@ -54,7 +58,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/menu_item_three"
+        android:id="@+id/library"
         style="@style/menuItem">
 
         <ImageView
@@ -68,7 +72,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/menu_item_four"
+        android:id="@+id/store"
         style="@style/menuItem">
 
         <ImageView

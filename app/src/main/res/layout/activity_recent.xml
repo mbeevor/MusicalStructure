@@ -7,51 +7,37 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructure.MainActivity">
 
-
-    <LinearLayout style="@style/appTrayTop">
-
-        <ImageView
-            style="@style/iconImage"
-            android:src="@drawable/back" />
-
-        <ImageView
-            style="@style/iconImage"
-            android:src="@drawable/play" />
-
-        <ImageView
-            style="@style/iconImage"
-            android:src="@drawable/forward" />
-
-    </LinearLayout>
+    <TextView
+        style="@style/description"
+        android:text="@string/activity_recent_description" />
 
     <LinearLayout style="@style/nowPlaying">
 
-        <ImageView
-            style="@style/nowPlayingImage"
-            android:src="@drawable/note" />
-
+        <TextView
+            style="@style/menuItemText"
+            android:text="@string/recent_items" />
 
     </LinearLayout>
 
     <LinearLayout style="@style/appTrayBottom">
 
         <ImageView
-            android:id="@+id/nowPlaying1"
+            android:id="@+id/now_playing_icon"
             style="@style/iconImage"
             android:src="@drawable/nowplaying" />
 
         <ImageView
-            android:id="@+id/recent1"
+            android:id="@+id/recent_icon"
             style="@style/iconImage"
             android:src="@drawable/recent" />
 
         <ImageView
-            android:id="@+id/library1"
+            android:id="@+id/library_icon"
             style="@style/iconImage"
             android:src="@drawable/library" />
 
         <ImageView
-            android:id="@+id/trolley1"
+            android:id="@+id/store_icon"
             style="@style/iconImage"
             android:src="@drawable/trolley" />
 

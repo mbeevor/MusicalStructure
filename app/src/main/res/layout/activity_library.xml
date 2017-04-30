@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/description"
+        android:text="@string/activity_library_description" />
+
+    <ScrollView style="@style/scrollView">
+
+        <LinearLayout style="@style/list">
+
+            <LinearLayout
+                android:id="@+id/artist"
+                style="@style/menuItem">
+
+                <ImageView
+                    style="@style/menuItemImage"
+                    android:src="@drawable/note" />
+
+                <TextView
+                    style="@style/menuItemText"
+                    android:text="@string/artist" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/album"
+                style="@style/menuItem">
+
+                <ImageView
+                    style="@style/menuItemImage"
+                    android:src="@drawable/note" />
+
+                <TextView
+                    style="@style/menuItemText"
+                    android:text="@string/album" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genre"
+                style="@style/menuItem">
+
+                <ImageView
+                    style="@style/menuItemImage"
+                    android:src="@drawable/note" />
+
+                <TextView
+                    style="@style/menuItemText"
+                    android:text="@string/genre" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/playlist"
+                style="@style/menuItem">
+
+                <ImageView
+                    style="@style/menuItemImage"
+                    android:src="@drawable/note" />
+
+                <TextView
+                    style="@style/menuItemText"
+                    android:text="@string/playlist" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout style="@style/appTrayBottom">
+
+        <ImageView
+            android:id="@+id/now_playing_icon"
+            style="@style/iconImage"
+            android:src="@drawable/nowplaying" />
+
+        <ImageView
+            android:id="@+id/recent_icon"
+            style="@style/iconImage"
+            android:src="@drawable/recent" />
+
+        <ImageView
+            android:id="@+id/library_icon"
+            style="@style/iconImage"
+            android:src="@drawable/library" />
+
+        <ImageView
+            android:id="@+id/store_icon"
+            style="@style/iconImage"
+            android:src="@drawable/trolley" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

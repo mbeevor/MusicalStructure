@@ -1,9 +1,31 @@
 <resources>
-    <string name="app_name">White-Beevor-Music</string>
+
+    <!-- Descriptions of each activity -->
+    <string name="activity_main_description">This is the app start screen which gives the user four options (all intents): now playing, recently played, their full library and the store.</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="activity_playing_description">The \'now playing\' activity displays the current song playing with an image and buttons for controlling playback. A new "mediaController" class needs to be created and onClickListeners methods set for the playback controls. The tray at the bottom has working intents to each other activity. This tray will display the same icons on each activity.</string>
+    <string name="recent">Recently Played</string>
+    <string name="activity_recent_description">An array - or list - of all recently played music, including artists, albums and playlists. Each item should result in playback if clicked.</string>
+    <string name="recent_items">Recently played items...</string>
+    <string name="library">Library</string>
+    <string name="activity_library_description">A comprehensive library of the user\'s music. This activity will sort content by artist, album, genre and playlists and each button will take the user to another activity that displays that content using an array.</string>
+    <string name="store">Store</string>
+    <string name="activity_store_description">Access to the online store where a user can purchase new music. This activity will sort content by artist, album, genre and playlists and each button will take the user to another activity that displays that content using an array. There will also be a payment facility (perhaps integrated with Andoird Pay or the Google Play Store).</string>
+
+    <!-- app details -->
+    <string name="app_name">White Beevor Music</string>
     <string name="name_first">White</string>
     <string name="name_last">Beevor</string>
+
+    <!-- menu names -->
     <string name="menu_item_one">Now Playing</string>
     <string name="menu_item_two">Recent</string>
     <string name="menu_item_three">Library</string>
     <string name="menu_item_four">Store</string>
+
+    <string name="album">album</string>
+    <string name="artist">artist</string>
+    <string name="genre">genre</string>
+    <string name="playlist">playlists</string>
+
 </resources>
