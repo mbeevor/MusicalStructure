@@ -7,13 +7,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.media.MediaPlayer;
 
+import java.util.ArrayList;
+
 /**
  * Java for Now Playing activity
  */
 
 public class PlayingActivity extends AppCompatActivity {
 
-    private MediaPlayer;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,22 +24,33 @@ public class PlayingActivity extends AppCompatActivity {
         // Set the content of the activity to use the correct xml layout file
         setContentView(R.layout.activity_playing);
 
-
         // Set IDs for each onClickListener //
 
         ImageView play = (ImageView) findViewById(R.id.play);
+        ImageView pause = (ImageView) findViewById(R.id.pause);
         ImageView nowPlaying = (ImageView) findViewById(R.id.now_playing_icon);
         ImageView recentPlay = (ImageView) findViewById(R.id.recent_icon);
         ImageView library = (ImageView) findViewById(R.id.library_icon);
         ImageView store = (ImageView) findViewById(R.id.store_icon);
 
+        // Create song list
+        ArrayList<Integer> songList = new ArrayList<>();
+        songList.add(R.raw.imalive);
+        songList.add(R.raw.howdoesamomentlastforever);
+
 
         // Media Player controls
+        mediaPlayer = MediaPlayer.create(this, songList[0]);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.imalive);
                 mediaPlayer.start();
+            }
+        });
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.pause();
             }
         });
 
