@@ -15,10 +15,12 @@
             android:src="@drawable/back" />
 
         <ImageView
+            android:id="@+id/play"
             style="@style/iconImage"
             android:src="@drawable/play" />
 
         <ImageView
+            android:id="@+id/pause"
             style="@style/iconImage"
             android:src="@drawable/forward" />
 

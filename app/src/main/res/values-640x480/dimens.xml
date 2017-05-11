@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_margin">4dp</dimen>
+    <dimen name="menu_padding">40dp</dimen>
+    <dimen name="menu_image_width">50dp</dimen>
+    <dimen name="menu_image_height">50dp</dimen>
+
+    <dimen name="icon_margin">25dp</dimen>
+
+</resources>
