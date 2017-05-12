@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class PlayingActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
+    private double songLength;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +29,23 @@ public class PlayingActivity extends AppCompatActivity {
 
         ImageView play = (ImageView) findViewById(R.id.play);
         ImageView pause = (ImageView) findViewById(R.id.pause);
+        ImageView skip = (ImageView) findViewById(R.id.forward);
         ImageView nowPlaying = (ImageView) findViewById(R.id.now_playing_icon);
         ImageView recentPlay = (ImageView) findViewById(R.id.recent_icon);
         ImageView library = (ImageView) findViewById(R.id.library_icon);
         ImageView store = (ImageView) findViewById(R.id.store_icon);
 
-        // Create song list
+        // TODO: Create song list Array and make this work!
         ArrayList<Integer> songList = new ArrayList<>();
         songList.add(R.raw.imalive);
         songList.add(R.raw.howdoesamomentlastforever);
 
 
+        // Calculate song length
+        songLength = mediaPlayer.getDuration();
+
         // Media Player controls
-        mediaPlayer = MediaPlayer.create(this, songList[0]);
+        mediaPlayer = MediaPlayer.create(this, R.raw.imalive);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,6 +57,12 @@ public class PlayingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mediaPlayer.pause();
             }
+        });
+        skip.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View view) {
+               mediaPlayer.seekTo(mediaPlayer.getCurrentPosition() + 5000);
+           }
         });
 
         // Set click listeners for icon tray //
