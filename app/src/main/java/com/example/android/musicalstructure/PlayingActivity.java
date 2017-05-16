@@ -75,6 +75,13 @@ public class PlayingActivity extends AppCompatActivity {
            }
         });
 
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                Toast.makeText(PlayingActivity.this, "I am done", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // Set click listeners for icon tray //
         nowPlaying.setOnClickListener(new View.OnClickListener() {
 
